@@ -7,15 +7,15 @@ using UnityEngine;
 public class PlayerStatus : MonoBehaviour
 {
     #region シリアライズフィールド群
-    [SerializeField] private float speed = 0.0f;
+    [SerializeField] private float moveSpeed = 0.0f;
     [SerializeField] private float power = 0.0f;
     #endregion
 
     #region プロパティ群
-    public float Speed
+    public float MoveSpeed
     {
-        get => speed;
-        private set => speed = value;
+        get => moveSpeed;
+        private set => moveSpeed = value;
     }
 
     public float Power
@@ -23,6 +23,23 @@ public class PlayerStatus : MonoBehaviour
         get => power;
         private set => power = value;
     }
+
+    public float MoveSpeedScale
+    {
+        get => moveSpeedScale;
+        private set => moveSpeedScale = value;
+    }
+
+    public float PowerScale
+    {
+        get => powerScale;
+        private set => powerScale = value;
+    }
+    #endregion
+
+    #region
+    private float moveSpeedScale = 1.0f;
+    private float powerScale = 1.0f;
     #endregion
 
     #region 関数群

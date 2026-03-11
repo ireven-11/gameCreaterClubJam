@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
         _moveDir = Vector2.Lerp(_moveDir, _inputDir, 0.5f);
         Debug.Log(_moveDir);
-        var addPos = _moveDir * _status.Speed * Time.deltaTime;
+        var addPos = _moveDir * _status.MoveSpeed * Time.deltaTime;
         transform.position += new Vector3(addPos.x, addPos.y, 0.0f);
     }
     #endregion

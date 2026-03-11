@@ -6,6 +6,7 @@ public class PlayerAnimator : MonoBehaviour
     #region メンバ変数群
     private Animator _animator = null;
     private PlayerController _playerController = null;
+    private PlayerStatus _status = null;
     #endregion
 
     #region 関数群
@@ -14,6 +15,7 @@ public class PlayerAnimator : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _playerController = GetComponent<PlayerController>();
+        _status = GetComponent<PlayerStatus>();
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class PlayerAnimator : MonoBehaviour
     private void RunAnimation()
     {
         _animator.SetBool("IsRun", _playerController.IsRun);
+        _animator.SetFloat("RunScale", _status.MoveSpeedScale);
     }
 
     private void AttackAnimation()

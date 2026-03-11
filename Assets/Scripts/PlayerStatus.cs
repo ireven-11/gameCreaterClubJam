@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UI;
-using UnityEngine.InputSystem;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
@@ -37,7 +33,7 @@ public class PlayerStatus : MonoBehaviour
     }
     #endregion
 
-    #region
+    #region メンバ変数群
     private float moveSpeedScale = 1.0f;
     private float powerScale = 1.0f;
     #endregion

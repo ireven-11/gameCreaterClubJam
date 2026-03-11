@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UI;
-using UnityEngine.InputSystem;
+﻿using UnityEngine.InputSystem;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -65,7 +62,6 @@ public class PlayerController : MonoBehaviour
         _inputDir.Normalize();
 
         _moveDir = Vector2.Lerp(_moveDir, _inputDir, 0.5f);
-        Debug.Log(_moveDir);
         var addPos = _moveDir * _status.MoveSpeed * Time.deltaTime;
         transform.position += new Vector3(addPos.x, addPos.y, 0.0f);
     }

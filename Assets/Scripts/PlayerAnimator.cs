@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerAnimator : MonoBehaviour
 {
@@ -21,18 +20,19 @@ public class PlayerAnimator : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        RunAnimation();
-        AttackAnimation();
-        InvertAnimation();
+        PlayRunAnim();
+        PlayAttackAnim();
+
+        InvertSprite();
     }
 
-    private void RunAnimation()
+    private void PlayRunAnim()
     {
         _animator.SetBool("IsRun", _playerController.IsRun);
         _animator.SetFloat("RunScale", _status.MoveSpeedScale);
     }
 
-    private void AttackAnimation()
+    private void PlayAttackAnim()
     {
         if (_playerController.IsAttack)
         {
@@ -40,7 +40,10 @@ public class PlayerAnimator : MonoBehaviour
         }
     }
 
-    private void InvertAnimation()
+    /// <summary>
+    /// 移動方向に応じてスプライトを反転させる
+    /// </summary>
+    private void InvertSprite()
     {
         if(_playerController.MoveDir.x == 0) { return; }
 

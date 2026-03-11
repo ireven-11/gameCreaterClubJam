@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 365509595}
   - component: {fileID: 365509594}
   - component: {fileID: 365509599}
+  - component: {fileID: 365509600}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -151,9 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d94308b0d457e4b9bc5040596a06fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  status:
-    speed: 5
-    attack: 0
+  status: {fileID: 0}
 --- !u!61 &365509595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -192,7 +191,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 0.22}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -296,6 +295,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &365509600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365509593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881024eb6c4108344becf75ab64cbb44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

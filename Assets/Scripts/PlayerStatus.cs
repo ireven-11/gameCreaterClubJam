@@ -22,33 +22,31 @@ public class PlayerStatus : MonoBehaviour
 
     public float MoveSpeedScale
     {
-        get => moveSpeedScale;
-        private set => moveSpeedScale = value;
+        get => _moveSpeedScale;
+        private set => _moveSpeedScale = value;
     }
 
     public float PowerScale
     {
-        get => powerScale;
-        private set => powerScale = value;
+        get => _powerScale;
+        private set => _powerScale = value;
     }
     #endregion
 
     #region メンバ変数群
-    private float moveSpeedScale = 1.0f;
-    private float powerScale = 1.0f;
+    private float _moveSpeedScale = 1.0f;
+    private float _powerScale = 1.0f;
     #endregion
 
     #region 関数群
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void Start()
+    public void OnChangeSpeedScale(float moveSpeedScale)
     {
-
+        _moveSpeedScale = moveSpeedScale;
     }
 
-    // Update is called once per frame
-    public void Update()
+    public void OnChangePowerScale(float powerScale)
     {
-
+        _powerScale = powerScale;
     }
     #endregion
 }

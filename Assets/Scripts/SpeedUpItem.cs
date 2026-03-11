@@ -3,17 +3,22 @@
 public class SpeedUpItem : Item
 {
     #region シリアライズフィールド群
-    [SerializeField] private float speedUp = 0.0f;
+    [SerializeField] private float speedScale = 0.0f;
     #endregion
 
     #region プロパティ群
-    public float SpeedUp
+    public float SpeedScale
     {
-        get => speedUp;
-        private set => speedUp = value;
+        get => speedScale;
+        private set => speedScale = value;
     }
     #endregion
 
     #region 関数群
+    public override void OnAcquired(PlayerStatus status)
+    {
+        _level++;
+        status.OnChangeSpeedScale(speedScale);
+    }
     #endregion
 }

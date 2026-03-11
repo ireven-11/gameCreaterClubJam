@@ -3,17 +3,22 @@
 public class PowerUpItem : Item
 {
     #region シリアライズフィールド群
-    [SerializeField] private float powerUp = 0.0f;
+    [SerializeField] private float powerScale = 0.0f;
     #endregion
 
     #region プロパティ群
-    public float PowerUp
+    public float PowerScale
     {
-        get => powerUp;
-        private set => powerUp = value;
+        get => powerScale;
+        private set => powerScale = value;
     }
     #endregion
 
     #region 関数群
+    public override void OnAcquired(PlayerStatus status)
+    {
+        _level++;
+        status.OnChangePowerScale(powerScale);
+    }
     #endregion
 }

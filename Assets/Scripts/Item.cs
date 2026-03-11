@@ -25,9 +25,6 @@ public abstract class Item : MonoBehaviour
     /// <summary>
     /// アイテムが取得された
     /// </summary>
-    public void OnAcquired()
-    {
-        _level++;
-    }
+    public abstract void OnAcquired(PlayerStatus status);
     #endregion
 }

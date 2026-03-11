@@ -7,11 +7,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     #region プロパティ群
-    public bool IsMove
+    public bool IsRun
     {
-        get => _inputDir.magnitude > 0;
+        get => _moveDir.magnitude > 0;
     }
 
+    public bool IsAttack
+    {
+        get => Keyboard.current.spaceKey.wasPressedThisFrame;
+    }
+    
     public Vector2 MoveDir
     {
         get => _moveDir;
@@ -20,9 +25,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region メンバ変数群
-    private Animator _animator = null;
     private Vector2 _moveDir = Vector2.zero;
-    private Vector2 _inputDir = Vector2.zero;
     private PlayerStatus _status = null;
     #endregion
 
@@ -30,7 +33,6 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
-        _animator = GetComponent<Animator>();
         _status = GetComponent<PlayerStatus>();
     }
 
@@ -38,12 +40,11 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         Move();
-        Attack();
     }
 
     private void Move()
     {
-        _inputDir = Vector2.zero;
+        var _inputDir = Vector2.zero;
 
         if (Keyboard.current.wKey.isPressed)
         {
@@ -67,14 +68,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log(_moveDir);
         var addPos = _moveDir * _status.Speed * Time.deltaTime;
         transform.position += new Vector3(addPos.x, addPos.y, 0.0f);
-    }
-
-    private void Attack()
-    {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            _animator.SetTrigger("Attack");
-        }
     }
     #endregion
 }

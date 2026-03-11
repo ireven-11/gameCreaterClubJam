@@ -1,8 +1,8 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    #region ƒƒ“ƒo•Ï”ŒQ
+    #region ãƒ¡ãƒ³ãƒå¤‰æ•°ç¾¤
     private PlayerController _playerController = null;
     #endregion
 
@@ -20,7 +20,9 @@ public class PlayerAnimator : MonoBehaviour
 
     private void InvertAnimation()
     {
-        var t = _playerController.CurrentMoveDir.x < 0 ? -1 : 1;
+        if (!_playerController.IsMove) { return; }
+
+        var t = _playerController.MoveDir.x < 0 ? -1 : 1;
         transform.localScale = new Vector3(t * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
 }

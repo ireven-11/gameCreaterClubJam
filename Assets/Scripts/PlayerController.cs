@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UI;
 using UnityEngine.InputSystem;
@@ -6,34 +6,32 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    #region ÉVÉäÉAÉâÉCÉYÉtÉBÅ[ÉãÉhåQ
-    [SerializeField] private PlayerStatus status = new PlayerStatus();
-    #endregion
-
-    #region ÉvÉçÉpÉeÉBåQ
-    public Vector2 CurrentMoveDir
+    #region „Éó„É≠„Éë„ÉÜ„Ç£Áæ§
+    public bool IsMove
     {
-        get
-        {
-            return _currentMoveDir;
-        }
-        private set
-        {
-            _currentMoveDir = value;
-        }
+        get => _inputDir.magnitude > 0;
+    }
+
+    public Vector2 MoveDir
+    {
+        get => _moveDir;
+        private set => _moveDir = value;
     }
     #endregion
 
-    #region ÉÅÉìÉoïœêîåQ
+    #region „É°„É≥„ÉêÂ§âÊï∞Áæ§
     private Animator _animator = null;
-    private Vector2 _currentMoveDir = Vector2.zero;
+    private Vector2 _moveDir = Vector2.zero;
+    private Vector2 _inputDir = Vector2.zero;
+    private PlayerStatus _status = null;
     #endregion
 
-    #region ä÷êîåQ
+    #region Èñ¢Êï∞Áæ§
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
-        _animator = GetComponent<Animator>();   
+        _animator = GetComponent<Animator>();
+        _status = GetComponent<PlayerStatus>();
     }
 
     // Update is called once per frame
@@ -45,30 +43,30 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        var nextMoveDir = Vector2.zero;
+        _inputDir = Vector2.zero;
 
         if (Keyboard.current.wKey.isPressed)
         {
-            nextMoveDir.y += 1;
+            _inputDir.y += 1;
         }
         if (Keyboard.current.sKey.isPressed)
         {
-            nextMoveDir.y -= 1;
+            _inputDir.y -= 1;
         }
         if (Keyboard.current.dKey.isPressed)
         {
-            nextMoveDir.x += 1;
+            _inputDir.x += 1;
         }
         if (Keyboard.current.aKey.isPressed)
         {
-            nextMoveDir.x -= 1;
+            _inputDir.x -= 1;
         }
-        nextMoveDir.Normalize();
+        _inputDir.Normalize();
 
-        _currentMoveDir = Vector2.Lerp(_currentMoveDir, nextMoveDir, 0.5f);
-        var addPos = _currentMoveDir * status.Speed * Time.deltaTime;
+        _moveDir = Vector2.Lerp(_moveDir, _inputDir, 0.5f);
+        Debug.Log(_moveDir);
+        var addPos = _moveDir * _status.Speed * Time.deltaTime;
         transform.position += new Vector3(addPos.x, addPos.y, 0.0f);
-        Debug.Log(_currentMoveDir);
     }
 
     private void Attack()

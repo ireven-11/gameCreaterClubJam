@@ -21,7 +21,7 @@ public class RetryButton : MonoBehaviour
     private void Onclick()
     {
         //todo：後でシーンの名前を正式名称に変える
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("InStage");
 
         //Debug.Log("リトライボタンが押された");
     }

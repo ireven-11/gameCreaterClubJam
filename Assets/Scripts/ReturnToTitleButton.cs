@@ -22,5 +22,7 @@ public class ReturnToTitleButton : MonoBehaviour
     {
         //todo：後でシーンの名前を正式名称に変える
         SceneManager.LoadScene("title");
+
+        //Debug.Log("タイトルへボタンが押された");
     }
 }

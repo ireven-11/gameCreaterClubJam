@@ -545,6 +545,7 @@ GameObject:
   - component: {fileID: 1073057668}
   - component: {fileID: 1073057667}
   - component: {fileID: 1073057666}
+  - component: {fileID: 1073057669}
   m_Layer: 5
   m_Name: returnToTitleButton
   m_TagString: Untagged
@@ -654,6 +655,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073057664}
   m_CullTransparentMesh: 1
+--- !u!114 &1073057669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073057664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48816586c658544095fc161c2725957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToTitleButton
+  button: {fileID: 1073057666}
 --- !u!1 &1144977349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1286,7 @@ GameObject:
   - component: {fileID: 1990616952}
   - component: {fileID: 1990616951}
   - component: {fileID: 1990616950}
+  - component: {fileID: 1990616953}
   m_Layer: 5
   m_Name: retryButton
   m_TagString: Untagged
@@ -1381,6 +1396,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990616948}
   m_CullTransparentMesh: 1
+--- !u!114 &1990616953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990616948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e07ae76e00ee0b49bbf70d1423c037b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RetryButton
+  button: {fileID: 1990616950}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

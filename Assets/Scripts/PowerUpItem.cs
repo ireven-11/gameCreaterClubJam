@@ -18,6 +18,8 @@ public class PowerUpItem : ItemBase
 
         // コストを増加
         cost += _level;
+        // コストテキストを更新
+        UpdateCostText();
     }
     #endregion
 }

@@ -1,7 +1,11 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
 
 public class Title : MonoBehaviour
 {
@@ -31,6 +35,9 @@ public class Title : MonoBehaviour
     [SerializeField]
     private bool disableInteractionWhileFading = true;
 
+    [Header("UI 参照")]
+    [SerializeField] private Button startButton;
+
 
     private bool firstPush = false;
 
@@ -50,6 +57,12 @@ public class Title : MonoBehaviour
             fadeCanvas.blocksRaycasts = false; // 初期はクリック可能
             fadeCanvas.alpha = 0f;
         }
+
+        if (startButton != null)
+        {
+            EventSystem.current?.SetSelectedGameObject(startButton.gameObject);
+        }
+
 
     }
 
@@ -151,6 +164,27 @@ public class Title : MonoBehaviour
         yield return null;
 
         op.allowSceneActivation = true; // シーン切り替え
+    }
+
+
+    private void Update()
+    {
+        /*
+
+#if ENABLE_INPUT_SYSTEM
+        // 新 Input System
+        if (!firstPush && Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            PressStart();
+        }
+#else
+    // 旧 Input Manager
+    if (!firstPush && Input.GetKeyDown(KeyCode.Space))
+    {
+        PressStart();
+    }
+#endif
+        */
     }
 
 

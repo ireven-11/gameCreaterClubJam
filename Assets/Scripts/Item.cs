@@ -12,16 +12,6 @@ public abstract class Item : MonoBehaviour
     #endregion
 
     #region 関数群
-    public void Start()
-    {
-
-    }
-
-    public void Update()
-    {
-
-    }
-
     /// <summary>
     /// アイテムが取得された
     /// </summary>

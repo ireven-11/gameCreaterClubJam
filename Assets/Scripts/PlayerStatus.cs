@@ -10,26 +10,22 @@ public class PlayerStatus : MonoBehaviour
     #region プロパティ群
     public float MoveSpeed
     {
-        get => moveSpeed;
-        private set => moveSpeed = value;
+        get => moveSpeed * _moveSpeedScale;
     }
 
     public float Power
     {
-        get => power;
-        private set => power = value;
+        get => power * _powerScale;
     }
 
     public float MoveSpeedScale
     {
         get => _moveSpeedScale;
-        private set => _moveSpeedScale = value;
     }
 
     public float PowerScale
     {
         get => _powerScale;
-        private set => _powerScale = value;
     }
     #endregion
 

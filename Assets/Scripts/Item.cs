@@ -4,7 +4,20 @@ using UnityEngine;
 public abstract class Item : MonoBehaviour
 {
     #region シリアライズフィールド群
-    [SerializeField] private int cost = 0;
+    [SerializeField] protected int cost = 0;
+    [SerializeField] protected int maxLevel = 1;
+    #endregion
+
+    #region プロパティ群
+    public int Cost
+    {
+        get => cost;
+    }
+
+    public bool CanAcquired
+    {
+        get => _level < maxLevel;
+    }
     #endregion
 
     #region メンバ変数群
@@ -12,22 +25,9 @@ public abstract class Item : MonoBehaviour
     #endregion
 
     #region 関数群
-    public void Start()
-    {
-
-    }
-
-    public void Update()
-    {
-
-    }
-
     /// <summary>
     /// アイテムが取得された
     /// </summary>
-    public void OnAcquired()
-    {
-        _level++;
-    }
+    public abstract void OnAcquired(PlayerStatus status);
     #endregion
 }

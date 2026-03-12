@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     public Text timeTexts;
     float totalTime = 60.0f;
-    public int limittime {  get; private set; } //§ŒÀŠÔ
+    public int limitTime {  get; private set; } //§ŒÀŠÔ
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,11 +19,11 @@ public class Timer : MonoBehaviour
     {
         //§ŒÀŠÔ‚ğŒ¸‚ç‚·ˆ—
         totalTime       -= Time.deltaTime;
-        limittime = (int)totalTime;
-        timeTexts.text  = limittime.ToString();
+        limitTime = (int)totalTime;
+        timeTexts.text  = limitTime.ToString();
 
         //c‚èŠÔ‚ª0‚É‚È‚Á‚½‚çƒV[ƒ“‘JˆÚ‚Ìˆ—‚ğ‚·‚é
-        if(limittime <= 0)
+        if(limitTime <= 0)
         {
             SceneManager.LoadScene("result");
         }

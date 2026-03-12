@@ -4,7 +4,20 @@ using UnityEngine;
 public abstract class Item : MonoBehaviour
 {
     #region シリアライズフィールド群
-    [SerializeField] private int cost = 0;
+    [SerializeField] protected int cost = 0;
+    [SerializeField] protected int maxLevel = 1;
+    #endregion
+
+    #region プロパティ群
+    public int Cost
+    {
+        get => cost;
+    }
+
+    public bool CanAcquired
+    {
+        get => _level < maxLevel;
+    }
     #endregion
 
     #region メンバ変数群

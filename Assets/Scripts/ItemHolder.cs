@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 public class ItemHolder : MonoBehaviour
 {
     #region メンバ変数群
-    private Dictionary<string, Item> _items = new Dictionary<string, Item>();
-    int _woodNum = 0;
+    private Dictionary<string, ItemBase> _items = new Dictionary<string, ItemBase>();
+    private int _woodNum = 0;
     #endregion
 
     #region 関数群
@@ -15,7 +15,7 @@ public class ItemHolder : MonoBehaviour
     /// 取得したアイテムを追加 (上書き)
     /// </summary>
     /// <param name="item">追加するアイテム</param>
-    public void AddItem(Item item)
+    public void AddItem(ItemBase item)
     {
         _items[item.name] = item;
     }
@@ -25,9 +25,9 @@ public class ItemHolder : MonoBehaviour
     /// </summary>
     /// <param name="name">取得するアイテムの名前</param>
     /// <returns>取得するアイテム (存在しなければnull)</returns>
-    public Item GetItem(string name)
+    public ItemBase GetItem(string name)
     {
-        if (_items.TryGetValue(name, out Item item))
+        if (_items.TryGetValue(name, out ItemBase item))
         {
             return item;
         }
@@ -47,6 +47,12 @@ public class ItemHolder : MonoBehaviour
         _woodNum -= cost;
 
         return true;
+    }
+
+    public void AddWood(int wood)
+    {
+        _woodNum += wood;
+        Debug.Log(_woodNum);
     }
     #endregion
 }

@@ -17,8 +17,6 @@ public class PowerUpItem : Item
         powerScale = _level;
         _level = Mathf.Min(_level, maxLevel);
         status.OnChangePowerScale(powerScale);
-
-        Debug.Log(powerScale);
     }
     #endregion
 }

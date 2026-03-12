@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: ccc038d223b0df34fa4224667f7b17d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8757089822034680222
+    second: Tiny Spruce Tree - GREEN - Spritesheet_0
+  - first:
+      213: -514742976151128778
+    second: Tiny Spruce Tree - GREEN - Spritesheet_1
+  - first:
+      213: 6677243389098661263
+    second: Tiny Spruce Tree - GREEN - Spritesheet_2
+  - first:
+      213: 6045109837461630366
+    second: Tiny Spruce Tree - GREEN - Spritesheet_3
+  - first:
+      213: -6551985839461796801
+    second: Tiny Spruce Tree - GREEN - Spritesheet_4
+  - first:
+      213: 2014315134371779923
+    second: Tiny Spruce Tree - GREEN - Spritesheet_5
+  - first:
+      213: -3427841154606423285
+    second: Tiny Spruce Tree - GREEN - Spritesheet_6
+  - first:
+      213: 2630325470842774068
+    second: Tiny Spruce Tree - GREEN - Spritesheet_7
+  - first:
+      213: 9218812033218769908
+    second: Tiny Spruce Tree - GREEN - Spritesheet_8
+  - first:
+      213: -497195914888065164
+    second: Tiny Spruce Tree - GREEN - Spritesheet_9
+  - first:
+      213: -2298526816605443313
+    second: Tiny Spruce Tree - GREEN - Spritesheet_10
+  - first:
+      213: -712995669027467277
+    second: Tiny Spruce Tree - GREEN - Spritesheet_11
+  - first:
+      213: 2748274370733260842
+    second: Tiny Spruce Tree - GREEN - Spritesheet_12
+  - first:
+      213: -54382712867270433
+    second: Tiny Spruce Tree - GREEN - Spritesheet_13
+  - first:
+      213: 7633885694439488660
+    second: Tiny Spruce Tree - GREEN - Spritesheet_14
+  - first:
+      213: 6591130250511705038
+    second: Tiny Spruce Tree - GREEN - Spritesheet_15
+  - first:
+      213: -7834065607056333005
+    second: Tiny Spruce Tree - GREEN - Spritesheet_16
+  - first:
+      213: 1384339366883410402
+    second: Tiny Spruce Tree - GREEN - Spritesheet_17
+  - first:
+      213: 4401513742215191670
+    second: Tiny Spruce Tree - GREEN - Spritesheet_18
+  - first:
+      213: -1868891274668572451
+    second: Tiny Spruce Tree - GREEN - Spritesheet_19
+  - first:
+      213: -5151738087851519547
+    second: Tiny Spruce Tree - GREEN - Spritesheet_20
+  - first:
+      213: -8781253754548776126
+    second: Tiny Spruce Tree - GREEN - Spritesheet_21
+  - first:
+      213: 1055906820428262282
+    second: Tiny Spruce Tree - GREEN - Spritesheet_22
+  - first:
+      213: -7686841595359096743
+    second: Tiny Spruce Tree - GREEN - Spritesheet_23
+  - first:
+      213: 5183933252405142251
+    second: Tiny Spruce Tree - GREEN - Spritesheet_24
+  - first:
+      213: -5017525460187513903
+    second: Tiny Spruce Tree - GREEN - Spritesheet_25
+  - first:
+      213: -554694615260950953
+    second: Tiny Spruce Tree - GREEN - Spritesheet_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2662f633431987680800000000000000
+      internalID: -8757089822034680222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63572eb8df34bd8f0800000000000000
+      internalID: -514742976151128778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f851d0e1c755aac50800000000000000
+      internalID: 6677243389098661263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9dae1a6e5b84e350800000000000000
+      internalID: 6045109837461630366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f347d79c79ba215a0800000000000000
+      internalID: -6551985839461796801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3555ce141f844fb10800000000000000
+      internalID: 2014315134371779923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b032831a1acdd60d0800000000000000
+      internalID: -3427841154606423285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432ee35641bc08420800000000000000
+      internalID: 2630325470842774068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3f91b63bccfef70800000000000000
+      internalID: 9218812033218769908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f425d13fa9919f0800000000000000
+      internalID: -497195914888065164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0be585d90ef910e0800000000000000
+      internalID: -2298526816605443313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ffc935773eea16f0800000000000000
+      internalID: -712995669027467277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 78
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20cddcaaf4d32620800000000000000
+      internalID: 2748274370733260842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0df95f53bce3ff0800000000000000
+      internalID: -54382712867270433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c7001d79201f960800000000000000
+      internalID: 7633885694439488660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3e412aa06687b50800000000000000
+      internalID: 6591130250511705038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3376d4846dec74390800000000000000
+      internalID: -7834065607056333005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1cca3d159263310800000000000000
+      internalID: 1384339366883410402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c9cb6ad61551d30800000000000000
+      internalID: 4401513742215191670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd08d89994d5016e0800000000000000
+      internalID: -1868891274668572451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c192c111895188b0800000000000000
+      internalID: -5151738087851519547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2431e8d3c38b22680800000000000000
+      internalID: -8781253754548776126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8be983a8a557ae00800000000000000
+      internalID: 1055906820428262282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9509cefab4ad25590800000000000000
+      internalID: -7686841595359096743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2a1f0d3d701f740800000000000000
+      internalID: 5183933252405142251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 0
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db7b0e8d2b2e5ab0800000000000000
+      internalID: -5017525460187513903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Spruce Tree - GREEN - Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e8c82bf245d48f0800000000000000
+      internalID: -554694615260950953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tiny Spruce Tree - GREEN - Spritesheet_0: -8757089822034680222
+      Tiny Spruce Tree - GREEN - Spritesheet_1: -514742976151128778
+      Tiny Spruce Tree - GREEN - Spritesheet_10: -2298526816605443313
+      Tiny Spruce Tree - GREEN - Spritesheet_11: -712995669027467277
+      Tiny Spruce Tree - GREEN - Spritesheet_12: 2748274370733260842
+      Tiny Spruce Tree - GREEN - Spritesheet_13: -54382712867270433
+      Tiny Spruce Tree - GREEN - Spritesheet_14: 7633885694439488660
+      Tiny Spruce Tree - GREEN - Spritesheet_15: 6591130250511705038
+      Tiny Spruce Tree - GREEN - Spritesheet_16: -7834065607056333005
+      Tiny Spruce Tree - GREEN - Spritesheet_17: 1384339366883410402
+      Tiny Spruce Tree - GREEN - Spritesheet_18: 4401513742215191670
+      Tiny Spruce Tree - GREEN - Spritesheet_19: -1868891274668572451
+      Tiny Spruce Tree - GREEN - Spritesheet_2: 6677243389098661263
+      Tiny Spruce Tree - GREEN - Spritesheet_20: -5151738087851519547
+      Tiny Spruce Tree - GREEN - Spritesheet_21: -8781253754548776126
+      Tiny Spruce Tree - GREEN - Spritesheet_22: 1055906820428262282
+      Tiny Spruce Tree - GREEN - Spritesheet_23: -7686841595359096743
+      Tiny Spruce Tree - GREEN - Spritesheet_24: 5183933252405142251
+      Tiny Spruce Tree - GREEN - Spritesheet_25: -5017525460187513903
+      Tiny Spruce Tree - GREEN - Spritesheet_26: -554694615260950953
+      Tiny Spruce Tree - GREEN - Spritesheet_3: 6045109837461630366
+      Tiny Spruce Tree - GREEN - Spritesheet_4: -6551985839461796801
+      Tiny Spruce Tree - GREEN - Spritesheet_5: 2014315134371779923
+      Tiny Spruce Tree - GREEN - Spritesheet_6: -3427841154606423285
+      Tiny Spruce Tree - GREEN - Spritesheet_7: 2630325470842774068
+      Tiny Spruce Tree - GREEN - Spritesheet_8: 9218812033218769908
+      Tiny Spruce Tree - GREEN - Spritesheet_9: -497195914888065164
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

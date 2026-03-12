@@ -169,7 +169,6 @@ public class Title : MonoBehaviour
 
     private void Update()
     {
-        /*
 
 #if ENABLE_INPUT_SYSTEM
         // êV Input System
@@ -184,7 +183,6 @@ public class Title : MonoBehaviour
         PressStart();
     }
 #endif
-        */
     }
 
 

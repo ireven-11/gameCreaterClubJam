@@ -247,7 +247,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &13161455
 Animator:
@@ -329,16 +329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!4 &23289733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4398183473897984408, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
@@ -436,7 +426,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &24553313
 Animator:
@@ -518,16 +508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &44237538
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,22 +690,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3012370585589158953, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4398183473897984408, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 13.160001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4398183473897984408, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 13.160001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4398183473897984408, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 13.160001
-      objectReference: {fileID: 0}
     - target: {fileID: 4398183473897984408, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -765,6 +729,10 @@ PrefabInstance:
     - target: {fileID: 4398183473897984408, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988481904595345893, guid: 85aef59aeb19a3b4c9987ef396274fd5, type: 3}
+      propertyPath: power
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -863,7 +831,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &66003664
 Animator:
@@ -945,16 +913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &74338830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1132,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &105039188
 Animator:
@@ -1256,16 +1214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &117728006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,7 +1306,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &117728009
 Animator:
@@ -1440,16 +1388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &131205005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1622,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &142034586
 Animator:
@@ -1766,16 +1704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &144853394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &144853395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2111,7 +2039,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &180035808
 Animator:
@@ -2193,16 +2121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &211752576
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,7 +2213,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &211752579
 Animator:
@@ -2377,16 +2295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &216214110
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,7 +2478,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &236806926
 Animator:
@@ -2606,16 +2514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &236806928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2754,7 +2652,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &255916399
 Animator:
@@ -2836,16 +2734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &260098770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,7 +2826,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &260098773
 Animator:
@@ -3020,16 +2908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &282926655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,7 +3079,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &330049779
 Animator:
@@ -3283,16 +3161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &333647357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,7 +3288,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &340873729
 Animator:
@@ -3581,7 +3449,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &354367437
 Animator:
@@ -3743,7 +3611,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &361673007
 Animator:
@@ -3779,16 +3647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &361673009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3927,7 +3785,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &381966557
 Animator:
@@ -3963,16 +3821,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &381966559
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4111,7 +3959,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &390652688
 Animator:
@@ -4193,16 +4041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &391665004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4295,7 +4133,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &391665007
 Animator:
@@ -4377,16 +4215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &404808573
 GameObject:
   m_ObjectHideFlags: 0
@@ -4479,7 +4307,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &404808576
 Animator:
@@ -4561,16 +4389,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &406573295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,7 +4480,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &406573298
 Animator:
@@ -4823,7 +4641,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &414714573
 Animator:
@@ -4984,7 +4802,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &420516908
 Animator:
@@ -5577,7 +5395,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &479912874
 Animator:
@@ -5693,7 +5511,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &502541491
 Animator:
@@ -5775,16 +5593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &504803618
 GameObject:
   m_ObjectHideFlags: 0
@@ -5968,7 +5776,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &507158936
 Animator:
@@ -6004,16 +5812,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &507158938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6151,7 +5949,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &510090832
 Animator:
@@ -6313,7 +6111,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &516672750
 Animator:
@@ -6349,16 +6147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &516672752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6497,7 +6285,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &517447317
 Animator:
@@ -6579,16 +6367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &519100183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6716,7 +6494,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &530591209
 Animator:
@@ -6752,16 +6530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &530591211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6900,7 +6668,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &557332946
 Animator:
@@ -6936,16 +6704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &557332948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7084,7 +6842,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &560076396
 Animator:
@@ -7166,16 +6924,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &594196526
 GameObject:
   m_ObjectHideFlags: 0
@@ -7268,7 +7016,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &594196529
 Animator:
@@ -7350,16 +7098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &594547589
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,7 +7189,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &594547592
 Animator:
@@ -7612,7 +7350,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &595455423
 Animator:
@@ -7811,7 +7549,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &602642902
 Animator:
@@ -8063,7 +7801,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &653178072
 Animator:
@@ -8225,7 +7963,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &659117870
 Animator:
@@ -8307,16 +8045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &663883535
 GameObject:
   m_ObjectHideFlags: 0
@@ -8409,7 +8137,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &663883538
 Animator:
@@ -8491,16 +8219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &669558295
 GameObject:
   m_ObjectHideFlags: 0
@@ -8592,7 +8310,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &669558298
 Animator:
@@ -8754,7 +8472,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &673799317
 Animator:
@@ -8836,16 +8554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &694227376
 GameObject:
   m_ObjectHideFlags: 0
@@ -8938,7 +8646,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &694227379
 Animator:
@@ -9020,16 +8728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &712065096
 GameObject:
   m_ObjectHideFlags: 0
@@ -9122,7 +8820,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &712065099
 Animator:
@@ -9204,16 +8902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &718359824
 GameObject:
   m_ObjectHideFlags: 0
@@ -9306,7 +8994,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &718359827
 Animator:
@@ -9388,16 +9076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &756545925
 GameObject:
   m_ObjectHideFlags: 0
@@ -9767,7 +9445,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &794396765
 Animator:
@@ -9849,16 +9527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1001 &816958570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10027,7 +9695,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &821931574
 Animator:
@@ -10109,16 +9777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &824423518
 GameObject:
   m_ObjectHideFlags: 0
@@ -10211,7 +9869,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &824423521
 Animator:
@@ -10293,16 +9951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &852043190
 GameObject:
   m_ObjectHideFlags: 0
@@ -10395,7 +10043,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &852043193
 Animator:
@@ -10477,16 +10125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &871647395
 GameObject:
   m_ObjectHideFlags: 0
@@ -10579,7 +10217,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &871647398
 Animator:
@@ -10661,16 +10299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &906469507
 GameObject:
   m_ObjectHideFlags: 0
@@ -10763,7 +10391,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &906469510
 Animator:
@@ -10845,16 +10473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &908854624
 GameObject:
   m_ObjectHideFlags: 0
@@ -10946,7 +10564,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &908854627
 Animator:
@@ -11108,7 +10726,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &921280520
 Animator:
@@ -11190,16 +10808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &947454752
 GameObject:
   m_ObjectHideFlags: 0
@@ -11382,7 +10990,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &970154400
 Animator:
@@ -11544,7 +11152,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &975239841
 Animator:
@@ -11626,16 +11234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &990127226
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,7 +11326,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &990127229
 Animator:
@@ -11810,16 +11408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &997463126
 GameObject:
   m_ObjectHideFlags: 0
@@ -11911,7 +11499,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &997463129
 Animator:
@@ -12073,7 +11661,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1003266017
 Animator:
@@ -12155,16 +11743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1011247979
 GameObject:
   m_ObjectHideFlags: 0
@@ -12257,7 +11835,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1011247982
 Animator:
@@ -12293,16 +11871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &1011247984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12440,7 +12008,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1026587519
 Animator:
@@ -12602,7 +12170,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1028887594
 Animator:
@@ -12638,16 +12206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &1028887596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12917,7 +12475,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1047406444
 Animator:
@@ -13079,7 +12637,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1059769357
 Animator:
@@ -13161,16 +12719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1001 &1066371097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13339,7 +12887,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1085590520
 Animator:
@@ -13421,16 +12969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1090928934
 GameObject:
   m_ObjectHideFlags: 0
@@ -13559,7 +13097,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1096432269
 Animator:
@@ -13641,16 +13179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1147515789
 GameObject:
   m_ObjectHideFlags: 0
@@ -13775,7 +13303,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1155855004
 Animator:
@@ -13857,16 +13385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1163936827
 GameObject:
   m_ObjectHideFlags: 0
@@ -13959,7 +13477,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1163936830
 Animator:
@@ -13995,16 +13513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &1163936832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14142,7 +13650,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1183087574
 Animator:
@@ -14303,7 +13811,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1183403425
 Animator:
@@ -14581,7 +14089,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1215563460
 Animator:
@@ -14617,16 +14125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &1215563462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14764,7 +14262,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1218992547
 Animator:
@@ -14926,7 +14424,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1250878287
 Animator:
@@ -15008,16 +14506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1251564513
 GameObject:
   m_ObjectHideFlags: 0
@@ -15111,7 +14599,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1251564516
 Animator:
@@ -15193,16 +14681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!114 &1251564519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15215,16 +14693,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1259231653
 GameObject:
   m_ObjectHideFlags: 0
@@ -15316,7 +14784,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1259231656
 Animator:
@@ -15478,7 +14946,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1270488905
 Animator:
@@ -15560,16 +15028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1284578040
 GameObject:
   m_ObjectHideFlags: 0
@@ -15662,7 +15120,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1284578043
 Animator:
@@ -15744,16 +15202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1285458005
 GameObject:
   m_ObjectHideFlags: 0
@@ -15926,7 +15374,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1289568630
 Animator:
@@ -16008,16 +15456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1320793384
 GameObject:
   m_ObjectHideFlags: 0
@@ -16110,7 +15548,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1320793387
 Animator:
@@ -16192,16 +15630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1357492552
 GameObject:
   m_ObjectHideFlags: 0
@@ -16294,7 +15722,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1357492555
 Animator:
@@ -16376,16 +15804,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1367172999
 GameObject:
   m_ObjectHideFlags: 0
@@ -16477,7 +15895,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1367173002
 Animator:
@@ -16639,7 +16057,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1369688577
 Animator:
@@ -16721,16 +16139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1407525166
 GameObject:
   m_ObjectHideFlags: 0
@@ -16822,7 +16230,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1407525169
 Animator:
@@ -17020,7 +16428,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1454166247
 Animator:
@@ -17102,16 +16510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1479498372
 GameObject:
   m_ObjectHideFlags: 0
@@ -17202,7 +16600,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1479498375
 Animator:
@@ -17318,7 +16716,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1489505045
 Animator:
@@ -17400,16 +16798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1494035281
 GameObject:
   m_ObjectHideFlags: 0
@@ -17502,7 +16890,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1494035284
 Animator:
@@ -17584,16 +16972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1498524691
 GameObject:
   m_ObjectHideFlags: 0
@@ -17753,7 +17131,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1528575334
 Animator:
@@ -17868,7 +17246,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1529162514
 Animator:
@@ -18029,7 +17407,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1549073133
 Animator:
@@ -18190,7 +17568,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1550172905
 Animator:
@@ -18351,7 +17729,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1551352780
 Animator:
@@ -18513,7 +17891,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1559147613
 Animator:
@@ -18595,16 +17973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1569167821
 GameObject:
   m_ObjectHideFlags: 0
@@ -18824,7 +18192,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1602046571
 Animator:
@@ -18906,16 +18274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1627993186
 GameObject:
   m_ObjectHideFlags: 0
@@ -19008,7 +18366,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1627993189
 Animator:
@@ -19090,16 +18448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1630202492
 GameObject:
   m_ObjectHideFlags: 0
@@ -19192,7 +18540,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1630202495
 Animator:
@@ -19228,16 +18576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &1630202497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19374,7 +18712,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1646451857
 Animator:
@@ -19490,7 +18828,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1661428893
 Animator:
@@ -19572,16 +18910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1675134273
 GameObject:
   m_ObjectHideFlags: 0
@@ -19765,7 +19093,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1684002481
 Animator:
@@ -19847,16 +19175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1694942028
 GameObject:
   m_ObjectHideFlags: 0
@@ -19989,7 +19307,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1704950721
 Animator:
@@ -20304,7 +19622,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1786902320
 Animator:
@@ -20386,16 +19704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1789763121
 GameObject:
   m_ObjectHideFlags: 0
@@ -20488,7 +19796,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1789763124
 Animator:
@@ -20524,16 +19832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &1789763126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20671,7 +19969,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1790388675
 Animator:
@@ -20924,7 +20222,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1813578607
 Animator:
@@ -21006,16 +20304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe625d7f077d5d429da4777e1e0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv1
-  maxHP: 3
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1832674055
 GameObject:
   m_ObjectHideFlags: 0
@@ -21220,7 +20508,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1849219076
 Animator:
@@ -21256,16 +20544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &1849219078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21403,7 +20681,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1865908258
 Animator:
@@ -21565,7 +20843,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1889333519
 Animator:
@@ -21647,16 +20925,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1902299587
 GameObject:
   m_ObjectHideFlags: 0
@@ -21749,7 +21017,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1902299590
 Animator:
@@ -21831,16 +21099,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1904425947
 GameObject:
   m_ObjectHideFlags: 0
@@ -21933,7 +21191,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1904425950
 Animator:
@@ -22015,16 +21273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1906627165
 GameObject:
   m_ObjectHideFlags: 0
@@ -22296,7 +21544,7 @@ SpriteRenderer:
   m_Size: {x: 0.42, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1948774204
 Animator:
@@ -22378,16 +21626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5314aed40e59046a7c2cf274421e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv2
-  maxHP: 10
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!1 &1973491086
 GameObject:
   m_ObjectHideFlags: 0
@@ -22479,7 +21717,7 @@ SpriteRenderer:
   m_Size: {x: 0.46, y: 0.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1973491089
 Animator:
@@ -22912,7 +22150,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &2046479879
 Animator:
@@ -23028,7 +22266,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &2120049842
 Animator:
@@ -23064,16 +22302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740c4114f8055a4b9a63b6f0d7205b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animation_Lv3
-  maxHP: 50
-  hitInvincibleTime: 0.1
-  attackerTag: PlayerAttack
-  hurtboxes2D: []
-  obstacleCollider2D: {fileID: 0}
-  keepObstacleAfterDeath: 1
-  useAnimatorLogState: 1
-  stumpPrefab: {fileID: 0}
-  stumpSpawnRoot: {fileID: 0}
-  destroyOriginalWhenSpawnStump: 1
 --- !u!61 &2120049844
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23211,6 +22439,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &273044397254516728
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3855627560408653987, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_Name
+      value: Cedar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.515417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.21005487
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176308907697852424, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c03734d07b06e1468275115a8b45c0e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -23220,11 +22505,12 @@ SceneRoots:
   - {fileID: 144853398}
   - {fileID: 1147515790}
   - {fileID: 46153818}
+  - {fileID: 1066371097}
+  - {fileID: 816958570}
+  - {fileID: 273044397254516728}
   - {fileID: 1574561746}
   - {fileID: 1498524692}
   - {fileID: 596342137}
   - {fileID: 1506670333}
   - {fileID: 449009182}
   - {fileID: 282926658}
-  - {fileID: 1066371097}
-  - {fileID: 816958570}

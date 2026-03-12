@@ -1,54 +1,61 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class CedarStatus : MonoBehaviour
 {
-    #region ƒVƒŠƒAƒ‰ƒCƒYƒtƒB[ƒ‹ƒhŒQ
+    #region ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ç¾¤
     [SerializeField] private int level = 0;
     [SerializeField] private float hp = 0.0f;
     [SerializeField] private GameObject dropPrefab = null;
     #endregion
 
-    #region ƒvƒƒpƒeƒBŒQ
+    #region ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç¾¤
     public int Level
     {
-        get { return level; }
-        private set { level = value; }
+        get => level;
+        private set => level = value;
     }
 
     public float HP
     {
-        get { return hp; }
-        private set { hp = value; }
+        get => hp;
+        private set => hp = value;
+    }
+
+    public float PrevHP
+    {
+        get => _prevHp;
     }
 
     public bool IsAlive
     {
-        get { return _isAlive; }
-        private set { _isAlive = value; }
+        get => _isAlive;
+        private set => _isAlive = value;
     }
     #endregion
 
-    #region ƒƒ“ƒo•Ï”ŒQ
+    #region ãƒ¡ãƒ³ãƒå¤‰æ•°ç¾¤
     private bool _isAlive = true;
+    private float _prevHp = 0.0f;
     public bool _isDrop = false;
     #endregion
 
-    #region ŠÖ”ŒQ
+    #region é–¢æ•°ç¾¤
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Start()
     {
-
+        _prevHp = hp;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if(_isDrop)
         {
             SpawnDrop();
             _isDrop = false;
         }
-        
+
+        _prevHp = hp;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -63,7 +70,7 @@ public class CedarStatus : MonoBehaviour
         var holder = parent.GetComponent<ItemHolder>();
         var item = holder.GetItem("PowerUpItem");
 
-        // ƒ_ƒ[ƒWŒvZ
+        // ãƒ€ãƒ¡ãƒ¼ã‚¸è¨ˆç®—
         var damage = status.Power;
         var damegeRate = LevelCheck(item != null ? item.Level : 1);
         damage *= damegeRate;
@@ -74,8 +81,8 @@ public class CedarStatus : MonoBehaviour
     public void SpawnDrop()
     {
         var prefab = Instantiate(dropPrefab);
-        var item = prefab.GetComponent<DropItem>();
-        item.DropFromTree(transform.position);
+        var item = prefab.GetComponent<ItemDropper>();
+        item.OnDrop(transform.position);
     }
 
 

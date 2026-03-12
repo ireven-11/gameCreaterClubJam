@@ -19,6 +19,8 @@ public class SpeedUpItem : ItemBase
 
         // コストを増加
         cost += _level;
+        // コストテキストを更新
+        UpdateCostText();
     }
     #endregion
 }

@@ -1,33 +1,33 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ItemHolder : MonoBehaviour
 {
-    #region ƒƒ“ƒo•Ï”ŒQ
-    private Dictionary<string, Item> _items = new Dictionary<string, Item>();
-    int _woodNum = 0;
+    #region ãƒ¡ãƒ³ãƒå¤‰æ•°ç¾¤
+    private Dictionary<string, ItemBase> _items = new Dictionary<string, ItemBase>();
+    private int _woodNum = 0;
     #endregion
 
-    #region ŠÖ”ŒQ
+    #region é–¢æ•°ç¾¤
     /// <summary>
-    /// æ“¾‚µ‚½ƒAƒCƒeƒ€‚ğ’Ç‰Á (ã‘‚«)
+    /// å–å¾—ã—ãŸã‚¢ã‚¤ãƒ†ãƒ ã‚’è¿½åŠ  (ä¸Šæ›¸ã)
     /// </summary>
-    /// <param name="item">’Ç‰Á‚·‚éƒAƒCƒeƒ€</param>
-    public void AddItem(Item item)
+    /// <param name="item">è¿½åŠ ã™ã‚‹ã‚¢ã‚¤ãƒ†ãƒ </param>
+    public void AddItem(ItemBase item)
     {
         _items[item.name] = item;
     }
 
     /// <summary>
-    /// “Á’è‚ÌƒAƒCƒeƒ€‚ğæ“¾‚·‚é
+    /// ç‰¹å®šã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’å–å¾—ã™ã‚‹
     /// </summary>
-    /// <param name="name">æ“¾‚·‚éƒAƒCƒeƒ€‚Ì–¼‘O</param>
-    /// <returns>æ“¾‚·‚éƒAƒCƒeƒ€ (‘¶İ‚µ‚È‚¯‚ê‚Înull)</returns>
-    public Item GetItem(string name)
+    /// <param name="name">å–å¾—ã™ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®åå‰</param>
+    /// <returns>å–å¾—ã™ã‚‹ã‚¢ã‚¤ãƒ†ãƒ  (å­˜åœ¨ã—ãªã‘ã‚Œã°null)</returns>
+    public ItemBase GetItem(string name)
     {
-        if (_items.TryGetValue(name, out Item item))
+        if (_items.TryGetValue(name, out ItemBase item))
         {
             return item;
         }
@@ -36,10 +36,10 @@ public class ItemHolder : MonoBehaviour
     }
 
     /// <summary>
-    /// –ØŞ‚ğÁ”ï‚·‚é
+    /// æœ¨æã‚’æ¶ˆè²»ã™ã‚‹
     /// </summary>
-    /// <param name="cost">Á”ïƒRƒXƒg</param>
-    /// <returns>true : –ØŞ‚ª‘«‚è‚½, false : ‘«‚è‚È‚©‚Á‚½</returns>
+    /// <param name="cost">æ¶ˆè²»ã‚³ã‚¹ãƒˆ</param>
+    /// <returns>true : æœ¨æãŒè¶³ã‚ŠãŸ, false : è¶³ã‚Šãªã‹ã£ãŸ</returns>
     public bool ConsumeWood(int cost)
     {
         if(_woodNum < cost) { return false; }
@@ -47,6 +47,12 @@ public class ItemHolder : MonoBehaviour
         _woodNum -= cost;
 
         return true;
+    }
+
+    public void AddWood(int wood)
+    {
+        _woodNum += wood;
+        Debug.Log(_woodNum);
     }
     #endregion
 }

@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba2d3a2082e6ba429b843ef03783142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStatus
-  moveSpeed: 5
+  moveSpeed: 10
   power: 0
 --- !u!114 &8297149032224908932
 MonoBehaviour:
@@ -260,6 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38687cd9f92a44343a590ffaf96c364b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemGetter
+  woodGetDistance: 1
+  woodChaseSpeed: 20
 --- !u!114 &2631186422329315716
 MonoBehaviour:
   m_ObjectHideFlags: 0

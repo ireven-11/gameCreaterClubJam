@@ -1,13 +1,14 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class CedarStatus : MonoBehaviour
 {
-    #region ƒVƒŠƒAƒ‰ƒCƒYƒtƒB[ƒ‹ƒhŒQ
-    [SerializeField] private int level  = 0;
-    [SerializeField] private float hp   = 0.0f;
+    #region ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ç¾¤
+    [SerializeField] private int level = 0;
+    [SerializeField] private float hp = 0.0f;
+    [SerializeField] private GameObject dropPrefab = null;
     #endregion
 
-    #region ƒvƒƒpƒeƒBŒQ
+    #region ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç¾¤
     public int Level
     {
         get { return level; }
@@ -22,62 +23,75 @@ public class CedarStatus : MonoBehaviour
 
     public bool IsAlive
     {
-        get { return isAlive; }
-        private set { isAlive = value; }
+        get { return _isAlive; }
+        private set { _isAlive = value; }
     }
     #endregion
 
-    #region ƒƒ“ƒo•Ï”ŒQ
-    private bool isAlive = true;
-    private float maxHp = 0.0f;
+    #region ãƒ¡ãƒ³ãƒå¤‰æ•°ç¾¤
+    private bool _isAlive = true;
+    public bool _isDrop = false;
     #endregion
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (!isAlive) { return; }
-        if (collision.tag != "Axe") { return; }
-
-        GameObject player = collision.transform.parent.gameObject;
-
-        PlayerStatus status = player.GetComponent<PlayerStatus>();
-
-        ItemHolder holder = player.GetComponent<ItemHolder>();
-        Item item = holder.GetItem("PowerUpItem");
-
-        float damage = status.Power;
-        float damegeRate = LevelCheck(item != null ? item.Level : 0);
-        damage *= damegeRate;
-
-        OnDamage(damage);
-    }
-
+    #region é–¢æ•°ç¾¤
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        maxHp = hp;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(_isDrop)
+        {
+            SpawnDrop();
+            _isDrop = false;
+        }        
+    }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!_isAlive) { return; }
+        if (collision.gameObject.name != "AttackTrigger") { return; }
+
+        var parent = collision.transform.parent.gameObject;
+        if(parent.name != "Player") { return; }
+
+        var status = parent.GetComponent<PlayerStatus>();
+        var holder = parent.GetComponent<ItemHolder>();
+        var item = holder.GetItem("PowerUpItem");
+
+        // ãƒ€ãƒ¡ãƒ¼ã‚¸è¨ˆç®—
+        var damage = status.Power;
+        var damegeRate = LevelCheck(item != null ? item.Level : 1);
+        damage *= damegeRate;
+
+        OnDamage(damage);
+    }
+
+    public void SpawnDrop()
+    {
+        var prefab = Instantiate(dropPrefab);
+        var item = prefab.GetComponent<DropItem>();
+        item.DropFromTree(transform.position);
     }
 
 
     private float LevelCheck(int power_level)
     {
-        if (level < power_level)
-        {
-            return 0.5f;
-        }
-        return 1.0f;
+        return level < power_level ? 0.5f : 1.0f;
     }
+
     private void OnDamage(float damage)
     {
         hp -= damage;
-        if (hp < 0.0f)
+        if (hp <= 0.0f)
         {
-            isAlive = false;
+            hp = 0.0f;
+            _isAlive = false;
+            SpawnDrop();
         }
     }
+    #endregion
 }

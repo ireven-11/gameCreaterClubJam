@@ -1,5 +1,6 @@
-﻿using UnityEngine.InputSystem;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.U2D.IK;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
     #region メンバ変数群
     private Vector2 _moveDir = Vector2.zero;
     private PlayerStatus _status = null;
+    private Rigidbody2D _rd2D = null;
+    private Vector2 _storagePos = Vector2.zero;
     #endregion
 
     #region 関数群
@@ -31,12 +34,19 @@ public class PlayerController : MonoBehaviour
     public void Start()
     {
         _status = GetComponent<PlayerStatus>();
+        _rd2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     public void Update()
     {
         Move();
+    }
+
+    public void FixedUpdate()
+    {
+        _rd2D.MovePosition( new Vector2(transform.position.x, transform.position.y) + _storagePos);
+        _storagePos = Vector2.zero;
     }
 
     private void Move()
@@ -62,8 +72,7 @@ public class PlayerController : MonoBehaviour
         _inputDir.Normalize();
 
         _moveDir = Vector2.Lerp(_moveDir, _inputDir, 0.5f);
-        var addPos = _moveDir * _status.MoveSpeed * Time.deltaTime;
-        transform.position += new Vector3(addPos.x, addPos.y, 0.0f);
+        _storagePos += _moveDir * _status.MoveSpeed * Time.deltaTime;
     }
     #endregion
 }

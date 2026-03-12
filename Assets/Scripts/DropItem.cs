@@ -3,7 +3,7 @@ using UnityEngine;
 public class DropItem : MonoBehaviour
 {
     #region シリアライズフィールド群
-    [SerializeField] private float jumpHeight = 1f;     // 跳ねる高さ
+    [SerializeField] private float jumpHeight = 3f;     // 跳ねる高さ
     [SerializeField] private float speed = 3f;           // 落下速度
     [SerializeField] private float horizontalRange = 0.5f; // 木の下で少し横にずらす
     [SerializeField] private float dropDistance = 2f;   // 木から落ちる距離

@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour
+public abstract class ItemBase : MonoBehaviour
 {
     #region シリアライズフィールド群
     [SerializeField] protected int cost = 0;

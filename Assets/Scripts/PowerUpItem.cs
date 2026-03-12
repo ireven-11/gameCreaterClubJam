@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
-public class PowerUpItem : Item
+public class PowerUpItem : ItemBase
 {
     #region シリアライズフィールド群
     [SerializeField] private float powerScale = 0.0f;

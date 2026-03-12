@@ -30,7 +30,6 @@ public class CedarStatus : MonoBehaviour
 
     #region ƒƒ“ƒo•Ï”ŒQ
     private bool _isAlive = true;
-    private float _maxHp = 0.0f;
     public bool _isDrop = false;
     #endregion
 
@@ -38,7 +37,7 @@ public class CedarStatus : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _maxHp = hp;
+
     }
 
     // Update is called once per frame

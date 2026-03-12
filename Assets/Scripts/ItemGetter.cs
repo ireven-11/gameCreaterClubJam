@@ -35,14 +35,7 @@ public class ItemGetter : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Wood")
-        {
-            var targetChaser = collision.gameObject.GetComponent<TargetChaser>();
-            if(targetChaser == null) { return; }
-
-            _woods.Add(targetChaser);
-            targetChaser.StartChase(_ownerTransform);
-        }
+        if (AddChaser(collision)) { return; }
         else if(collision.gameObject.tag == "Item")
         {
             _getItemObject = collision.gameObject;
@@ -86,6 +79,29 @@ public class ItemGetter : MonoBehaviour
                 _woods.Remove(_woods[i]);
             }
         }
+    }
+
+    private bool AddChaser(Collider2D collision)
+    {
+        if (collision.gameObject.tag != "Wood") { return false; }
+
+        var dropItem = collision.gameObject.GetComponent<DropItem>();
+        if (dropItem == null) { return false; }
+        if (dropItem.IsDropping) { return false; }
+
+        var targetChaser = collision.gameObject.GetComponent<TargetChaser>();
+        if (targetChaser == null) { return false; }
+
+        // 既に追加していた場合は無視
+        foreach (var target in _woods)
+        {
+            if (target == targetChaser) { return false; }
+        }
+
+        _woods.Add(targetChaser);
+        targetChaser.StartChase(_ownerTransform);
+
+        return true;
     }
     #endregion
 }

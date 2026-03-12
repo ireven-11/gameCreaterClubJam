@@ -1,23 +1,31 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class DropItem : MonoBehaviour
 {
-    #region ƒVƒŠƒAƒ‰ƒCƒYƒtƒB[ƒ‹ƒhŒQ
-    [SerializeField] private float jumpHeight = 3f;     // ’µ‚Ë‚é‚‚³
-    [SerializeField] private float speed = 3f;           // —‰º‘¬“x
-    [SerializeField] private float horizontalRange = 0.5f; // –Ø‚Ì‰º‚Å­‚µ‰¡‚É‚¸‚ç‚·
-    [SerializeField] private float dropDistance = 2f;   // –Ø‚©‚ç—‚¿‚é‹——£
+    #region ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ç¾¤
+    [SerializeField] private float jumpHeight = 3f;     // è·³ã­ã‚‹é«˜ã•
+    [SerializeField] private float speed = 3f;           // è½ä¸‹é€Ÿåº¦
+    [SerializeField] private float horizontalRange = 0.5f; // æœ¨ã®ä¸‹ã§å°‘ã—æ¨ªã«ãšã‚‰ã™
+    [SerializeField] private float dropDistance = 2f;   // æœ¨ã‹ã‚‰è½ã¡ã‚‹è·é›¢
     #endregion
 
-    #region ƒƒ“ƒo•Ï”ŒQ
+    #region ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç¾¤
+    public bool IsDropping
+    {
+        get => _isDropping;
+    }
+    #endregion
+
+    #region ãƒ¡ãƒ³ãƒå¤‰æ•°ç¾¤
     private Vector3 _startPos;
     private Vector3 _targetPos;
-    private float _height;      // ã‰º‚ÌŒÊ‚Ì‚‚³
+    private float _height;      // ä¸Šä¸‹ã®å¼§ã®é«˜ã•
     private bool _isDropping = false;
-    private float _t;           // •âŠÔƒpƒ‰ƒ[ƒ^ 0¨1
+    private float _t;           // è£œé–“ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ 0â†’1
     #endregion
 
-    // –Ø‚©‚çƒhƒƒbƒv‚·‚é‚Æ‚«‚ÉŒÄ‚Ô
+    #region é–¢æ•°ç¾¤
+    // æœ¨ã‹ã‚‰ãƒ‰ãƒ­ãƒƒãƒ—ã™ã‚‹ã¨ãã«å‘¼ã¶
     public void DropFromTree(Vector3 treePosition)
     {
         float xOffset = Random.Range(-horizontalRange, horizontalRange);
@@ -44,10 +52,10 @@ public class DropItem : MonoBehaviour
         {
             _t += speed * Time.deltaTime;
 
-            // üŒ`•âŠÔ‚ÅX/Y‚ÌˆÊ’u
+            // ç·šå½¢è£œé–“ã§X/Yã®ä½ç½®
             Vector3 pos = Vector3.Lerp(_startPos, _targetPos, _t);
 
-            // ã‰º‚ÌŒÊiƒWƒƒƒ“ƒv‚Ì‚‚³j‚ğ’Ç‰Á
+            // ä¸Šä¸‹ã®å¼§ï¼ˆã‚¸ãƒ£ãƒ³ãƒ—ã®é«˜ã•ï¼‰ã‚’è¿½åŠ 
             float arc = Mathf.Sin(_t * Mathf.PI) * _height;
             pos.y += arc;
 
@@ -60,4 +68,5 @@ public class DropItem : MonoBehaviour
             }
         }
     }
+    #endregion
 }

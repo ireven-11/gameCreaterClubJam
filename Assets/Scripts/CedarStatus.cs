@@ -5,6 +5,7 @@ public class CedarStatus : MonoBehaviour
     #region シリアライズフィールド群
     [SerializeField] private int level  = 0;
     [SerializeField] private float hp   = 0.0f;
+    [SerializeField] private GameObject dropPrefab;
     #endregion
 
     #region プロパティ群
@@ -30,6 +31,7 @@ public class CedarStatus : MonoBehaviour
     #region メンバ変数群
     private bool isAlive = true;
     private float maxHp = 0.0f;
+    public bool isDrop = false; 
     #endregion
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -51,6 +53,13 @@ public class CedarStatus : MonoBehaviour
         OnDamage(damage);
     }
 
+    public void SpawnDrop()
+    {
+        GameObject drop = Instantiate(dropPrefab);
+        DropItem item = drop.GetComponent<DropItem>();
+        item.DropFromTree(transform.position);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -60,7 +69,12 @@ public class CedarStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(isDrop)
+        {
+            SpawnDrop();
+            isDrop = false;
+        }
+        
     }
 
 
@@ -78,6 +92,7 @@ public class CedarStatus : MonoBehaviour
         if (hp < 0.0f)
         {
             isAlive = false;
+            SpawnDrop();
         }
     }
 }

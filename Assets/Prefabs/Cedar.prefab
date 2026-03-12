@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4903007829850509885}
   - component: {fileID: 1497657108499064463}
   - component: {fileID: 1875202133922398171}
+  - component: {fileID: 926040946640401963}
+  - component: {fileID: 3971342803137803735}
   m_Layer: 0
   m_Name: Cedar
   m_TagString: Untagged
@@ -182,4 +184,48 @@ MonoBehaviour:
   level: 0
   hp: 10
   dropPrefab: {fileID: 6960882341334074495, guid: c18b4112a24d75b48a140039878459ed, type: 3}
-  isDrop: 0
+  _isDrop: 0
+--- !u!95 &926040946640401963
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3855627560408653987}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3971342803137803735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3855627560408653987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed44bb1e5d911e46be11797cb08255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CedarAnimator
+  maxHP: 10
+  hitInvincibleTime: 0.1
+  attackerTag: PlayerAttack
+  hurtboxes2D: []
+  obstacleCollider2D: {fileID: 0}
+  keepObstacleAfterDeath: 1
+  useAnimatorLogState: 1
+  stumpPrefab: {fileID: 0}
+  stumpSpawnRoot: {fileID: 0}
+  destroyOriginalWhenSpawnStump: 1

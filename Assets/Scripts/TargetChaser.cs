@@ -21,14 +21,14 @@ public class TargetChaser : MonoBehaviour
     private bool _isChasing = false;
     private bool _hasReachedTarget = false;
     private float _moveSpeed = 0.0f;
-    private DropItem _dropItem = null;
+    private ItemDropper _dropItem = null;
     #endregion
 
     #region 関数群
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
-        _dropItem = GetComponent<DropItem>();
+        _dropItem = GetComponent<ItemDropper>();
 
         _moveSpeed = initialVelocity;
     }

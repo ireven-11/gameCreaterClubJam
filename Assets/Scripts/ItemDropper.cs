@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class DropItem : MonoBehaviour
+public class ItemDropper : MonoBehaviour
 {
     #region シリアライズフィールド群
     [SerializeField] private float jumpHeight = 3f;     // 跳ねる高さ
@@ -26,7 +26,7 @@ public class DropItem : MonoBehaviour
 
     #region 関数群
     // 木からドロップするときに呼ぶ
-    public void DropFromTree(Vector3 treePosition)
+    public void OnDrop(Vector3 treePosition)
     {
         float xOffset = Random.Range(-horizontalRange, horizontalRange);
 

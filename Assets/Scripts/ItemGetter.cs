@@ -85,7 +85,7 @@ public class ItemGetter : MonoBehaviour
     {
         if (collision.gameObject.tag != "Wood") { return false; }
 
-        var dropItem = collision.gameObject.GetComponent<DropItem>();
+        var dropItem = collision.gameObject.GetComponent<ItemDropper>();
         if (dropItem == null) { return false; }
         if (dropItem.IsDropping) { return false; }
 

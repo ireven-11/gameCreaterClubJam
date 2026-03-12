@@ -11,43 +11,51 @@ public class CedarStatus : MonoBehaviour
     #region プロパティ群
     public int Level
     {
-        get { return level; }
-        private set { level = value; }
+        get => level;
+        private set => level = value;
     }
 
     public float HP
     {
-        get { return hp; }
-        private set { hp = value; }
+        get => hp;
+        private set => hp = value;
+    }
+
+    public float PrevHP
+    {
+        get => _prevHp;
     }
 
     public bool IsAlive
     {
-        get { return _isAlive; }
-        private set { _isAlive = value; }
+        get => _isAlive;
+        private set => _isAlive = value;
     }
     #endregion
 
     #region メンバ変数群
     private bool _isAlive = true;
+    private float _prevHp = 0.0f;
     public bool _isDrop = false;
     #endregion
 
     #region 関数群
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Start()
     {
-
+        _prevHp = hp;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if(_isDrop)
         {
             SpawnDrop();
             _isDrop = false;
-        }        
+        }
+
+        _prevHp = hp;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -73,8 +81,8 @@ public class CedarStatus : MonoBehaviour
     public void SpawnDrop()
     {
         var prefab = Instantiate(dropPrefab);
-        var item = prefab.GetComponent<DropItem>();
-        item.DropFromTree(transform.position);
+        var item = prefab.GetComponent<ItemDropper>();
+        item.OnDrop(transform.position);
     }
 
 

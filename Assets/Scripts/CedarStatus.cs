@@ -36,11 +36,18 @@ public class CedarStatus : MonoBehaviour
     {
         if (!isAlive) { return; }
         if (collision.tag != "Axe") { return; }
+
         GameObject player = collision.transform.parent.gameObject;
+
         PlayerStatus status = player.GetComponent<PlayerStatus>();
+
+        ItemHolder holder = player.GetComponent<ItemHolder>();
+        Item item = holder.GetItem("PowerUpItem");
+
         float damage = status.Power;
-        float damegeRate = LevelCheck(/*status.Level*/ 2);
+        float damegeRate = LevelCheck(item != null ? item.Level : 0);
         damage *= damegeRate;
+
         OnDamage(damage);
     }
 

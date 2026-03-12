@@ -18,6 +18,11 @@ public abstract class Item : MonoBehaviour
     {
         get => _level < maxLevel;
     }
+
+    public int Level
+    {
+        get => _level;
+    }
     #endregion
 
     #region メンバ変数群

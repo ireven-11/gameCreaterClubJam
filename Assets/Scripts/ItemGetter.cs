@@ -13,7 +13,8 @@ public class ItemGetter : MonoBehaviour
     private PlayerStatus _status = null;
     private GameObject _getItemObject = null;
     private ItemHolder _itemHolder = null;
-    private List<GameObject> _woods = new List<GameObject>();
+    private List<TargetChaser> _woods = new List<TargetChaser>();
+    private Transform _ownerTransform = null;
     #endregion
 
     #region 関数群
@@ -22,20 +23,25 @@ public class ItemGetter : MonoBehaviour
     {
         _status = GetComponent<PlayerStatus>();
         _itemHolder = GetComponent<ItemHolder>();
+        _ownerTransform = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     public void Update()
     {
         GetItem(_getItemObject);
-        OnChaseWoodItem();
+        GetWood();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Wood")
+        if(collision.gameObject.tag == "Wood")
         {
-            _woods.Add(collision.gameObject);
+            var targetChaser = collision.gameObject.GetComponent<TargetChaser>();
+            if(targetChaser == null) { return; }
+
+            _woods.Add(targetChaser);
+            targetChaser.StartChase(_ownerTransform);
         }
         else if(collision.gameObject.tag == "Item")
         {
@@ -68,21 +74,16 @@ public class ItemGetter : MonoBehaviour
         _itemHolder.AddItem(item);
     }
 
-    private void OnChaseWoodItem()
+    private void GetWood()
     {
+        // ループ中に削除するため逆順でループ
         for (int i = _woods.Count - 1; i >= 0; i--)
         {
-            var wood = _woods[i];
-
-            var dir = (transform.position - wood.transform.position).normalized;
-            wood.transform.position += dir * woodChaseSpeed * Time.deltaTime;
-
-            var distance = (transform.position - wood.transform.position).magnitude;
-
-            if (distance < woodGetDistance)
+            if (_woods[i].HasReachedTarget)
             {
                 _itemHolder.AddWood(1);
-                _woods.RemoveAt(i);
+                Destroy(_woods[i].gameObject);
+                _woods.Remove(_woods[i]);
             }
         }
     }

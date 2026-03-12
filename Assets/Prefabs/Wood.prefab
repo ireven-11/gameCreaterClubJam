@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1916418578730361096}
   - component: {fileID: 155598536412119565}
-  - component: {fileID: 4273659789234329199}
   - component: {fileID: 7286911517185163430}
+  - component: {fileID: 4273659789234329199}
+  - component: {fileID: 505905205309684670}
   m_Layer: 0
   m_Name: Wood
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,22 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4273659789234329199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6960882341334074495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedec0baaf37b4d499529c0121dea800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropItem
-  jumpHeight: 3
-  speed: 3
-  horizontalRange: 0.5
-  dropDistance: 2
 --- !u!61 &7286911517185163430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,3 +140,35 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &4273659789234329199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6960882341334074495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedec0baaf37b4d499529c0121dea800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropItem
+  jumpHeight: 3
+  speed: 3
+  horizontalRange: 0.5
+  dropDistance: 2
+--- !u!114 &505905205309684670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6960882341334074495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d336660a0f16bbb44a9d29ceda695e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetChaser
+  initialVelocity: 2
+  acceleration: 0.3
+  maxSpeed: 10
+  endChaseDistance: 0.1

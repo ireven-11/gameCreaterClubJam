@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 155598536412119565}
   - component: {fileID: 4273659789234329199}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -238,3 +238,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e07a84c426c98469f933c26d52f347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColliderDeactivator
+  transparentSpeed: 2
+  transparentWaitTime: 1

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 91886c88d58c130458f43a28708981db
+guid: ebbd992c804a3994aa608a43e4f6c6a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4327717473713553145
-    second: stone fence_small (4)_0
+      213: -8437284497848419079
+    second: wood_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stone fence_small (4)_0
+      name: wood_2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 6
-        height: 12
+        x: 7
+        y: 6
+        width: 51
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9fe72f4fc142f0c30800000000000000
-      internalID: 4327717473713553145
+      spriteID: 9fcb5dca37eb8ea80800000000000000
+      internalID: -8437284497848419079
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stone fence_small (4)_0: 4327717473713553145
+      wood_2_0: -8437284497848419079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,7 @@ public class ReturnToTitleButton : MonoBehaviour
     void Start()
     {
         button.onClick.AddListener(OnClick);
-        fade.OnFadeOutComplete += OnFadeOutFinished;
+        fade.OnFadeOutComplete += OnFadeOutComplete;
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class ReturnToTitleButton : MonoBehaviour
     {
         if (fade != null)
         {
-            fade.OnFadeOutComplete -= OnFadeOutFinished;
+            fade.OnFadeOutComplete -= OnFadeOutComplete;
         }
     }
 
@@ -35,7 +35,7 @@ public class ReturnToTitleButton : MonoBehaviour
         fade.StartFadeOut();
     }
 
-    private void OnFadeOutFinished()
+    private void OnFadeOutComplete()
     {
         //Debug.Log("RetryButton: フェードアウト完了 → シーン遷移");
         SceneManager.LoadScene("title");

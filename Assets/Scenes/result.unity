@@ -623,6 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReturnToTitleButton
   button: {fileID: 1073057666}
+  fade: {fileID: 1472998784}
 --- !u!1 &1144977349
 GameObject:
   m_ObjectHideFlags: 0

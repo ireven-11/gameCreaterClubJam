@@ -29,13 +29,13 @@ public class RetryButton : MonoBehaviour
             return;
         }
 
-        Debug.Log("RetryButton: StartFadeOut 呼び出し");
+        //Debug.Log("RetryButton: StartFadeOut 呼び出し");
         fade.StartFadeOut();
     }
 
     private void OnFadeOutComplete()
     {
-        Debug.Log("RetryButton: フェードアウト完了 → シーン遷移");
+        //Debug.Log("RetryButton: フェードアウト完了 → シーン遷移");
         SceneManager.LoadScene("InStage");
     }
 }

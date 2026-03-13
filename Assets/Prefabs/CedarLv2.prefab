@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2088314587984766068}
   - component: {fileID: 372453339535736191}
   - component: {fileID: 263920143576731517}
+  - component: {fileID: 6371172773210310893}
   m_Layer: 0
   m_Name: CedarLv2
   m_TagString: Untagged
@@ -225,3 +226,15 @@ MonoBehaviour:
   stumpPrefab: {fileID: 0}
   stumpSpawnRoot: {fileID: 0}
   destroyOriginalWhenSpawnStump: 1
+--- !u!114 &6371172773210310893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094645146499777384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e07a84c426c98469f933c26d52f347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColliderDeactivator

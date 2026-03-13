@@ -60,7 +60,6 @@ public class ItemHolder : MonoBehaviour
     public void AddWood(int wood)
     {
         _woodNum += wood;
-        Debug.Log(_woodNum);
         UpdateWoodText();
     }
 

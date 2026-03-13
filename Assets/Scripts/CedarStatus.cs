@@ -99,6 +99,9 @@ public class CedarStatus : MonoBehaviour
             hp = 0.0f;
             _isAlive = false;
             SpawnDrop();
+
+            // 死亡した場合スコアを加算
+            ScoreManager.Instance.score++;
         }
     }
     #endregion

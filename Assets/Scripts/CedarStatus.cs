@@ -1,53 +1,78 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
 public class CedarStatus : MonoBehaviour
 {
-    #region ÉVÉäÉAÉâÉCÉYÉtÉBÅ[ÉãÉhåQ
-    [SerializeField] private int level  = 0;
-    [SerializeField] private float hp   = 0.0f;
-    [SerializeField] private GameObject dropPrefab;
+    #region „Ç∑„É™„Ç¢„É©„Ç§„Ç∫„Éï„Ç£„Éº„É´„ÉâÁæ§
+    [SerializeField] private int level = 0;
+    [SerializeField] private float hp = 0.0f;
+    [SerializeField] private GameObject dropPrefab = null;
     #endregion
 
-    #region ÉvÉçÉpÉeÉBåQ
+    #region „Éó„É≠„Éë„ÉÜ„Ç£Áæ§
     public int Level
     {
-        get { return level; }
-        private set { level = value; }
+        get => level;
+        private set => level = value;
     }
 
     public float HP
     {
-        get { return hp; }
-        private set { hp = value; }
+        get => hp;
+        private set => hp = value;
+    }
+
+    public float PrevHP
+    {
+        get => _prevHp;
     }
 
     public bool IsAlive
     {
-        get { return isAlive; }
-        private set { isAlive = value; }
+        get => _isAlive;
+        private set => _isAlive = value;
     }
     #endregion
 
-    #region ÉÅÉìÉoïœêîåQ
-    private bool isAlive = true;
-    private float maxHp = 0.0f;
-    public bool isDrop = false; 
+    #region „É°„É≥„ÉêÂ§âÊï∞Áæ§
+    private bool _isAlive = true;
+    private float _prevHp = 0.0f;
+    public bool _isDrop = false;
     #endregion
+
+    #region Èñ¢Êï∞Áæ§
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public void Start()
+    {
+        _prevHp = hp;
+    }
+
+    // Update is called once per frame
+    public void Update()
+    {
+        if(_isDrop)
+        {
+            SpawnDrop();
+            _isDrop = false;
+        }
+
+        _prevHp = hp;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!isAlive) { return; }
-        if (collision.tag != "Axe") { return; }
+        if (!_isAlive) { return; }
+        if (collision.gameObject.name != "AttackTrigger") { return; }
 
-        GameObject player = collision.transform.parent.gameObject;
+        var parent = collision.transform.parent.gameObject;
+        if(parent.name != "Player") { return; }
 
-        PlayerStatus status = player.GetComponent<PlayerStatus>();
+        var status = parent.GetComponent<PlayerStatus>();
+        var holder = parent.GetComponent<ItemHolder>();
+        var item = holder.GetItem("PowerUpItem");
 
-        ItemHolder holder = player.GetComponent<ItemHolder>();
-        Item item = holder.GetItem("PowerUpItem");
-
-        float damage = status.Power;
-        float damegeRate = LevelCheck(item != null ? item.Level : 0);
+        // „ÉÄ„É°„Éº„Ç∏Ë®àÁÆó
+        var damage = status.Power;
+        var damegeRate = LevelCheck(item != null ? item.Level : 1);
         damage *= damegeRate;
 
         OnDamage(damage);
@@ -55,44 +80,26 @@ public class CedarStatus : MonoBehaviour
 
     public void SpawnDrop()
     {
-        GameObject drop = Instantiate(dropPrefab);
-        DropItem item = drop.GetComponent<DropItem>();
-        item.DropFromTree(transform.position);
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        maxHp = hp;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(isDrop)
-        {
-            SpawnDrop();
-            isDrop = false;
-        }
-        
+        var prefab = Instantiate(dropPrefab);
+        var item = prefab.GetComponent<ItemDropper>();
+        item.OnDrop(transform.position);
     }
 
 
     private float LevelCheck(int power_level)
     {
-        if (level < power_level)
-        {
-            return 0.5f;
-        }
-        return 1.0f;
+        return level < power_level ? 0.5f : 1.0f;
     }
+
     private void OnDamage(float damage)
     {
         hp -= damage;
-        if (hp < 0.0f)
+        if (hp <= 0.0f)
         {
-            isAlive = false;
+            hp = 0.0f;
+            _isAlive = false;
             SpawnDrop();
         }
     }
+    #endregion
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
-public class SpeedUpItem : Item
+public class SpeedUpItem : ItemBase
 {
     #region シリアライズフィールド群
     [SerializeField] private float speedScale = 0.0f;
@@ -19,6 +19,8 @@ public class SpeedUpItem : Item
 
         // コストを増加
         cost += _level;
+        // コストテキストを更新
+        UpdateCostText();
     }
     #endregion
 }

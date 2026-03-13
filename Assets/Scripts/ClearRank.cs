@@ -10,7 +10,7 @@ public class ClearRank : MonoBehaviour
     void Start()
     {
         //todo：スコアの仕組みができたらスコアのゲッターを呼び出して代入する
-        score = 50;
+        score = ScoreManager.Instance.score;
 
         if (score >= 100)
         {

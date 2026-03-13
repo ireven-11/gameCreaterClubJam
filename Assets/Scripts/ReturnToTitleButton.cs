@@ -39,5 +39,8 @@ public class ReturnToTitleButton : MonoBehaviour
     {
         //Debug.Log("RetryButton: フェードアウト完了 → シーン遷移");
         SceneManager.LoadScene("title");
+
+        //スコア初期化
+        ScoreManager.Instance.score = 0;
     }
 }

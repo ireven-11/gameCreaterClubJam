@@ -10,7 +10,7 @@ public class ClearScore : MonoBehaviour
     void Start()
     {
         //todo：スコアの仕組みができたらスコアのゲッターを呼び出して代入する
-        score = 100;
+        score = ScoreManager.Instance.score;
 
         scoreText.text = string.Format("<color=red><size=200%>{0}</size></color>", score) + scoreText.text;
     }

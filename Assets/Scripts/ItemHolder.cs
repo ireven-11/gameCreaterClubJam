@@ -2,9 +2,16 @@
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class ItemHolder : MonoBehaviour
 {
+    #region シリアライズフィールド群
+    [SerializeField] private TextMeshProUGUI wood;
+    [SerializeField] private TextMeshProUGUI power;
+    [SerializeField] private TextMeshProUGUI speed;
+    #endregion
+
     #region メンバ変数群
     private Dictionary<string, ItemBase> _items = new Dictionary<string, ItemBase>();
     private int _woodNum = 0;
@@ -18,6 +25,7 @@ public class ItemHolder : MonoBehaviour
     public void AddItem(ItemBase item)
     {
         _items[item.name] = item;
+        UpdateItemLevelText();
     }
 
     /// <summary>
@@ -45,7 +53,7 @@ public class ItemHolder : MonoBehaviour
         if(_woodNum < cost) { return false; }
 
         _woodNum -= cost;
-
+        UpdateWoodText();
         return true;
     }
 
@@ -53,6 +61,24 @@ public class ItemHolder : MonoBehaviour
     {
         _woodNum += wood;
         Debug.Log(_woodNum);
+        UpdateWoodText();
+    }
+
+    public void UpdateWoodText()
+    {
+        wood.text = _woodNum.ToString("D6");
+    }
+
+    public void UpdateItemLevelText()
+    {
+        if (_items.TryGetValue("SpeedUpItem", out ItemBase speedUpItem))
+        {
+            speed.text = "Lv " + speedUpItem.Level.ToString();
+        }
+        if (_items.TryGetValue("PowerUpItem", out ItemBase powerUpItem))
+        {
+            power.text = "Lv " + powerUpItem.Level.ToString();
+        }
     }
     #endregion
 }

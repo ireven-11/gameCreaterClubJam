@@ -1,10 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public Text timeTexts;
+    public TextMeshProUGUI textMeshProUGUI;
     float totalTime = 60.0f;
     public int limitTime {  get; private set; } //§ŒÀŠÔ
 
@@ -20,7 +21,7 @@ public class Timer : MonoBehaviour
         //§ŒÀŠÔ‚ğŒ¸‚ç‚·ˆ—
         totalTime       -= Time.deltaTime;
         limitTime = (int)totalTime;
-        timeTexts.text  = limitTime.ToString();
+        textMeshProUGUI.text  = limitTime.ToString();
 
         //c‚èŠÔ‚ª0‚É‚È‚Á‚½‚çƒV[ƒ“‘JˆÚ‚Ìˆ—‚ğ‚·‚é
         if(limitTime <= 0)

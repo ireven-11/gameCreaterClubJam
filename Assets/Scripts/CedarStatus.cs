@@ -80,9 +80,12 @@ public class CedarStatus : MonoBehaviour
 
     public void SpawnDrop()
     {
-        var prefab = Instantiate(dropPrefab);
-        var item = prefab.GetComponent<ItemDropper>();
-        item.OnDrop(transform.position);
+        for (int i = 0; i < level; i++)
+        {
+            var prefab = Instantiate(dropPrefab);
+            var item = prefab.GetComponent<ItemDropper>();
+            item.OnDrop(transform.position);
+        }
     }
 
 

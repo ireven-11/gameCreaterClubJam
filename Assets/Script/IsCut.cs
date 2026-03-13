@@ -1,11 +1,11 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class IsCut : MonoBehaviour
 {
 
-    void OnDeath()
-    {
-        ExpManager.Instance.AddExp(1); // 1ƒ|ƒCƒ“ƒg‰ÁZ
-    }
+    //void OnDeath()
+    //{
+    //    ExpManager.Instance.AddExp(1); // 1ãƒã‚¤ãƒ³ãƒˆåŠ ç®—
+    //}
 
 }

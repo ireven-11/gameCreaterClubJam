@@ -10,9 +10,9 @@ public class ClearRank : MonoBehaviour
     void Start()
     {
         //todo：スコアの仕組みができたらスコアのゲッターを呼び出して代入する
-        score = 100;
+        score = 50;
 
-        if(score >= 100)
+        if (score >= 100)
         {
             rankText.text = string.Format("<color=red><size=200%>全宇宙</size></color>") + rankText.text;
         }
